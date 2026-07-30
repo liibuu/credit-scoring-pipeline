@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: bronze
+    schema: bronze
+    tables:
+      - name: application_train
+      - name: application_test
+      - name: bureau
+      - name: bureau_balance
+      - name: previous_application
+      - name: installments_payments

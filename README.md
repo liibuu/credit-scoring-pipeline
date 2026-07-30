@@ -38,6 +38,10 @@ python scripts/download_data.py
 1. dbt model joins silver.application with aggregated features from silver.bureau, silver.previous_application (e.g. counts, sums, ratios per applicant) → one wide table
 2. This table (only, not bronze/silver) gets loaded into Neon for anything cloud-facing (training script, later the API)
 
+## Reasoning about keeping a subset of tables
+As I don't have money to buy storage in Neon for a learning project -> I decided to push Gold layer only to serve with API.
+Also, I keep only top several source tables with most gain [7th place solution feature importance](https://www.kaggle.com/code/jsaguiar/lightgbm-7th-place-solution/output)
+
 
 
 
