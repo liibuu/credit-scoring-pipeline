@@ -12,6 +12,39 @@ pip freeze > requirements.txt
 python scripts/download_data.py
 ```
 
+## Start local Postgres 
+```bash
+docker compose up -d
+```
+
+# Load bronze
+```bash
+python scripts/load_bronze.py
+```
+
+## Set up profiles.yml
+```bash
+mkdir -p ~/.dbt
+cp dbt/profiles.yml.example ~/.dbt/profiles.yml
+```
+
+## Sanity check the connection
+```bash
+cd dbt
+dbt debug
+```
+
+# Run dbt
+```bash
+dbt run
+```
+
+# Check results
+```bash
+dbt test    # if you add tests later
+psql postgresql://postgres:postgres@localhost:5432/credit_risk -c "select count(*) from gold.gold_applicant_features;"
+```
+
 ## Bronze (local Postgres, Docker)
 **Input**: Raw Kaggle CSVs in ./data/ (minus bureau_balance, per scope trim)
 **Output**: bronze.* tables in local Postgres — 1:1 mirror of CSVs, no transformation
