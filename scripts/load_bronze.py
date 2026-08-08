@@ -25,6 +25,8 @@ TABLES = [
     "bureau_balance",
     "previous_application",
     "installments_payments",
+    "POS_CASH_balance",
+    "credit_card_balance",
 ]
 
 
