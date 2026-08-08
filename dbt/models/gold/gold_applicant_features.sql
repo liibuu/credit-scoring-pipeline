@@ -14,39 +14,17 @@ ins as (
     select * from {{ ref('gold_installments_features') }}
 ),
 
+pos as (
+    select * from {{ ref('gold_pos_cash_features') }}
+),
+
+cc as (
+    select * from {{ ref('gold_credit_card_features') }}
+),
+
 joined as (
     select
-        app.sk_id_curr,
-        app.target,
-        app.is_train,
-        app.code_gender,
-        app.organization_type,
-        app.occupation_type,
-        app.name_education_type,
-        app.days_birth,
-        app.days_employed,
-        app.days_id_publish,
-        app.days_registration,
-        app.days_last_phone_change,
-        app.amt_credit,
-        app.amt_annuity,
-        app.amt_goods_price,
-        app.amt_income_total,
-        app.ext_source_1,
-        app.ext_source_2,
-        app.ext_source_3,
-        app.ext_sources_mean,
-        app.ext_sources_min,
-        app.ext_sources_max,
-        app.ext_sources_prod,
-        app.ext_sources_weighted,
-        app.credit_to_annuity_ratio,
-        app.credit_to_goods_ratio,
-        app.annuity_to_income_ratio,
-        app.income_to_employed_ratio,
-        app.employed_to_birth_ratio,
-        app.phone_to_birth_ratio,
-
+        app.*,
         bureau.bureau_debt_credit_diff_mean,
         bureau.bureau_debt_over_credit,
         bureau.bureau_active_debt_credit_diff_mean,
@@ -74,6 +52,21 @@ joined as (
         ins.last_loan_dpd_mean,
         ins.last_loan_dpd_std,
 
+        pos.pos_months_balance_size,
+        pos.pos_sk_dpd_max,
+        pos.pos_sk_dpd_mean,
+        pos.pos_late_payment_mean,
+        pos.pos_loan_completed_mean,
+        pos.pos_remaining_instalments_ratio_mean,
+
+        cc.cc_amt_balance_mean,
+        cc.cc_amt_balance_max,
+        cc.cc_limit_use_mean,
+        cc.cc_limit_use_max,
+        cc.cc_late_payment_sum,
+        cc.cc_payment_div_min_mean,
+        cc.cc_drawing_limit_ratio_mean,
+
         -- cross-table ratios (need current application's own amt_annuity)
         prev.approved_amt_annuity_max / nullif(app.amt_annuity, 0)  as current_to_approved_annuity_max_ratio,
         prev.approved_amt_annuity_mean / nullif(app.amt_annuity, 0) as current_to_approved_annuity_mean_ratio
@@ -82,6 +75,8 @@ joined as (
     left join bureau on app.sk_id_curr = bureau.sk_id_curr
     left join prev   on app.sk_id_curr = prev.sk_id_curr
     left join ins    on app.sk_id_curr = ins.sk_id_curr
+    left join pos    on app.sk_id_curr = pos.sk_id_curr
+    left join cc     on app.sk_id_curr = cc.sk_id_curr
 )
 
 select * from joined
