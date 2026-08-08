@@ -9,4 +9,5 @@ sources:
       - name: bureau
       - name: bureau_balance
       - name: previous_application
-      - name: installments_payments
+      - name: POS_CASH_balance
+      - name: credit_card_balance
