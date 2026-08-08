@@ -52,8 +52,18 @@ dbt run
 
 # Check results
 ```bash
-dbt test    # if you add tests later
+dbt test   
 psql postgresql://postgres:postgres@localhost:5432/credit_risk -c "select count(*) from gold.gold_applicant_features;"
+
+docker exec -it credit-risk-postgres psql -U postgres -d credit_risk -c "
+SELECT
+    schemaname || '.' || relname AS table_name,
+    pg_size_pretty(pg_total_relation_size(relid)) AS size,
+    n_live_tup AS row_count
+FROM pg_stat_user_tables
+WHERE schemaname = 'gold'
+ORDER BY pg_total_relation_size(relid) DESC;
+"
 ```
 
 ## Bronze (local Postgres, Docker)
