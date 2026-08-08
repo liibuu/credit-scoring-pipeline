@@ -52,7 +52,7 @@ joined as (
         ins.last_loan_dpd_mean,
         ins.last_loan_dpd_std,
 
-        pos.pos_months_balance_size,
+        pos.pos_loan_count,
         pos.pos_sk_dpd_max,
         pos.pos_sk_dpd_mean,
         pos.pos_late_payment_mean,
