@@ -1,0 +1,59 @@
+version: 2
+
+models:
+  - name: gold_bureau_features
+    columns:
+      - name: sk_id_curr
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              to: ref('silver_application')
+              field: sk_id_curr
+
+  - name: gold_previous_application_features
+    columns:
+      - name: sk_id_curr
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              to: ref('silver_application')
+              field: sk_id_curr
+
+  - name: gold_installments_features
+    columns:
+      - name: sk_id_curr
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              to: ref('silver_application')
+              field: sk_id_curr
+
+  - name: gold_pos_cash_features
+    columns:
+      - name: sk_id_curr
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              to: ref('silver_application')
+              field: sk_id_curr
+
+  - name: gold_credit_card_features
+    columns:
+      - name: sk_id_curr
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              to: ref('silver_application')
+              field: sk_id_curr
+
+  - name: gold_applicant_features
+    columns:
+      - name: sk_id_curr
+        tests:
+          - unique
+          - not_null

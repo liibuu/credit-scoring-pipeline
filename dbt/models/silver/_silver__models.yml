@@ -1,0 +1,79 @@
+version: 2
+
+models:
+  - name: silver_application
+    columns:
+      - name: sk_id_curr
+        tests:
+          - unique
+          - not_null
+      - name: target
+        tests:
+          - accepted_values:
+              values: [0, 1]
+              config:
+                where: "target is not null"
+
+  - name: silver_bureau
+    columns:
+      - name: sk_id_bureau
+        tests:
+          - unique
+          - not_null
+      - name: sk_id_curr
+        tests:
+          - not_null
+          - relationships:
+              to: ref('silver_application')
+              field: sk_id_curr
+
+  - name: silver_previous_application
+    columns:
+      - name: sk_id_prev
+        tests:
+          - unique
+          - not_null
+      - name: sk_id_curr
+        tests:
+          - not_null
+          - relationships:
+              to: ref('silver_application')
+              field: sk_id_curr
+
+  - name: silver_installments_payments
+    columns:
+      - name: sk_id_curr
+        tests:
+          - not_null
+          - relationships:
+              to: ref('silver_application')
+              field: sk_id_curr
+      - name: sk_id_prev
+        tests:
+          - not_null
+
+  - name: silver_pos_cash
+    columns:
+      - name: sk_id_prev
+        tests:
+          - unique
+          - not_null
+      - name: sk_id_curr
+        tests:
+          - not_null
+          - relationships:
+              to: ref('silver_application')
+              field: sk_id_curr
+
+  - name: silver_credit_card
+    columns:
+      - name: sk_id_prev
+        tests:
+          - unique
+          - not_null
+      - name: sk_id_curr
+        tests:
+          - not_null
+          - relationships:
+              to: ref('silver_application')
+              field: sk_id_curr
