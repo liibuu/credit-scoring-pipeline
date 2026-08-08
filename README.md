@@ -46,6 +46,7 @@ dbt debug
 
 # Run dbt
 ```bash
+dbt deps
 dbt run
 ```
 

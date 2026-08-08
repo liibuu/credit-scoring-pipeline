@@ -1,10 +1,16 @@
 with train as (
-    select *, 1 as is_train
+    select
+        {{ dbt_utils.star(from=source('bronze', 'application_train'), except=["TARGET"]) }}, -- handle column order
+        "TARGET",
+        1 as is_train
     from {{ source('bronze', 'application_train') }}
 ),
 
 test as (
-    select *, null::int as "TARGET", 0 as is_train
+    select
+        {{ dbt_utils.star(from=source('bronze', 'application_test')) }},
+        null::bigint as "TARGET",
+        0 as is_train
     from {{ source('bronze', 'application_test') }}
 ),
 
