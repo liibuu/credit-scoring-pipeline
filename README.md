@@ -20,6 +20,16 @@ docker compose up -d
 # Load bronze
 ```bash
 python scripts/load_bronze.py
+
+docker exec -it credit-risk-postgres psql -U postgres -d credit_risk -c "\dt bronze.*"
+docker exec -it credit-risk-postgres psql -U postgres -d credit_risk -c "SELECT count(*) FROM bronze.application_train;"
+docker exec -it credit-risk-postgres psql -U postgres -d credit_risk -c "SELECT count(*) FROM bronze.application_test;"
+docker exec -it credit-risk-postgres psql -U postgres -d credit_risk -c "SELECT count(*) FROM bronze.bureau;"
+docker exec -it credit-risk-postgres psql -U postgres -d credit_risk -c "SELECT count(*) FROM bronze.bureau_balance;"
+docker exec -it credit-risk-postgres psql -U postgres -d credit_risk -c "SELECT count(*) FROM bronze.previous_application;"
+docker exec -it credit-risk-postgres psql -U postgres -d credit_risk -c "SELECT count(*) FROM bronze.installments_payments;"
+docker exec -it credit-risk-postgres psql -U postgres -d credit_risk -c 'SELECT count(*) FROM bronze."POS_CASH_balance";'
+docker exec -it credit-risk-postgres psql -U postgres -d credit_risk -c "SELECT count(*) FROM bronze.credit_card_balance;"
 ```
 
 ## Set up profiles.yml

@@ -52,7 +52,7 @@ models:
         tests:
           - not_null
 
-  - name: silver_pos_cash
+  - name: silver_pos_cash_balance
     columns:
       - name: sk_id_prev
         tests:
@@ -65,7 +65,7 @@ models:
               to: ref('silver_application')
               field: sk_id_curr
 
-  - name: silver_credit_card
+  - name: silver_credit_card_balance
     columns:
       - name: sk_id_prev
         tests:

@@ -1,7 +1,6 @@
 """
-Load raw Home Credit CSVs into the `bronze` schema of local Postgres.
-Only loads the tables in scope: application_train/test, bureau, bureau_balance,
-previous_application, installments_payments.
+Load raw Kaggle CSVs into the `bronze` schema of local Postgres.
+Uses Postgres COPY (alternative for pandas to_sql) for bulk load speed.
 
 Usage:
     python scripts/load_bronze.py
@@ -16,7 +15,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 DATA_DIR = Path("./data")
-CHUNK_SIZE = 10_000
+SCHEMA_SAMPLE_ROWS = 5000
 
 TABLES = [
     "application_train",
@@ -30,13 +29,27 @@ TABLES = [
 ]
 
 
-def downcast_dtypes(df: pd.DataFrame) -> pd.DataFrame:
-    """Shrink int64/float64 columns to smaller types where safe. Reduces load size/time."""
-    for col in df.select_dtypes(include=["int64"]).columns:
-        df[col] = pd.to_numeric(df[col], downcast="integer")
-    for col in df.select_dtypes(include=["float64"]).columns:
-        df[col] = pd.to_numeric(df[col], downcast="float")
-    return df
+def create_table_from_sample(engine, table_name: str, csv_path: Path) -> None:
+    """Infer column types from a small sample and create the (empty) table."""
+    sample = pd.read_csv(csv_path, nrows=SCHEMA_SAMPLE_ROWS)
+    sample.to_sql(table_name, engine, schema="bronze", if_exists="replace", index=False)
+    with engine.begin() as conn:
+        conn.execute(text(f'TRUNCATE TABLE bronze."{table_name}"'))
+
+
+def copy_csv_into_table(engine, table_name: str, csv_path: Path) -> None:
+    """Bulk load the full CSV via COPY -- much faster than row-by-row INSERT."""
+    raw_conn = engine.raw_connection()
+    try:
+        cur = raw_conn.cursor()
+        with open(csv_path, "r", encoding="utf-8") as f:
+            cur.copy_expert(
+                f'COPY bronze."{table_name}" FROM STDIN WITH (FORMAT csv, HEADER true, NULL \'\')',
+                f,
+            )
+        raw_conn.commit()
+    finally:
+        raw_conn.close()
 
 
 def load_table(engine, table_name: str) -> None:
@@ -45,19 +58,12 @@ def load_table(engine, table_name: str) -> None:
         print(f"  SKIP {table_name}: {csv_path} not found")
         return
 
-    df = pd.read_csv(csv_path)
-    df = downcast_dtypes(df)
+    create_table_from_sample(engine, table_name, csv_path)
+    copy_csv_into_table(engine, table_name, csv_path)
 
-    df.to_sql(
-        table_name,
-        engine,
-        schema="bronze",
-        if_exists="replace",
-        index=False,
-        chunksize=CHUNK_SIZE,
-        method="multi",
-    )
-    print(f"  OK   {table_name}: {len(df):,} rows, {len(df.columns)} cols")
+    with engine.begin() as conn:
+        count = conn.execute(text(f'SELECT COUNT(*) FROM bronze."{table_name}"')).scalar()
+    print(f"  OK   {table_name}: {count:,} rows loaded")
 
 
 def main():
@@ -66,7 +72,6 @@ def main():
         raise RuntimeError("LOCAL_DATABASE_URL not set in .env")
 
     engine = create_engine(db_url)
-
     with engine.begin() as conn:
         conn.execute(text("CREATE SCHEMA IF NOT EXISTS bronze"))
 

@@ -217,3 +217,1468 @@ Compilation Error
 [0m17:40:44.742073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAD40BF250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAD39A3F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAD39A3D50>]}
 [0m17:40:44.742073 [debug] [MainThread]: Flushing usage events
 [0m17:40:45.664297 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:46:35.422612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229C7C234D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229C7C89090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229C7C83990>]}
+
+
+============================== 18:46:35.443210 | b95c2e60-87a5-46c8-a76f-85c0d016ba97 ==============================
+[0m18:46:35.443210 [info ] [MainThread]: Running with dbt=1.12.0
+[0m18:46:35.443210 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'D:\\credit-scoring-pipeline\\dbt\\logs'}
+[0m18:46:35.464525 [info ] [MainThread]: dbt version: 1.12.0
+[0m18:46:35.475300 [info ] [MainThread]: python version: 3.11.9
+[0m18:46:35.475300 [info ] [MainThread]: python path: D:\credit-scoring-pipeline\venv\Scripts\python.exe
+[0m18:46:35.475300 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:46:35.598687 [info ] [MainThread]: Using profiles dir at C:\Users\Lenovo\.dbt
+[0m18:46:35.598687 [info ] [MainThread]: Using profiles.yml file at C:\Users\Lenovo\.dbt\profiles.yml
+[0m18:46:35.600694 [info ] [MainThread]: Using dbt_project.yml file at D:\credit-scoring-pipeline\dbt\dbt_project.yml
+[0m18:46:35.602702 [info ] [MainThread]: adapter type: postgres
+[0m18:46:35.602702 [info ] [MainThread]: adapter version: 1.11.0
+[0m18:46:35.754198 [info ] [MainThread]: Configuration:
+[0m18:46:35.756206 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:46:35.758216 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:46:35.758840 [info ] [MainThread]: Required dependencies:
+[0m18:46:35.758840 [debug] [MainThread]: Executing "git --help"
+[0m18:46:35.785683 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:46:35.785683 [debug] [MainThread]: STDERR: "b''"
+[0m18:46:35.785683 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:46:35.789518 [info ] [MainThread]: Connection:
+[0m18:46:35.789518 [info ] [MainThread]:   host: localhost
+[0m18:46:35.789518 [info ] [MainThread]:   port: 5432
+[0m18:46:35.789518 [info ] [MainThread]:   user: postgres
+[0m18:46:35.789518 [info ] [MainThread]:   database: credit_risk
+[0m18:46:35.789518 [info ] [MainThread]:   schema: public
+[0m18:46:35.789518 [info ] [MainThread]:   connect_timeout: 10
+[0m18:46:35.789518 [info ] [MainThread]:   role: None
+[0m18:46:35.789518 [info ] [MainThread]:   search_path: None
+[0m18:46:35.795100 [info ] [MainThread]:   keepalives_idle: 0
+[0m18:46:35.798122 [info ] [MainThread]:   sslmode: None
+[0m18:46:35.798122 [info ] [MainThread]:   sslcert: None
+[0m18:46:35.799631 [info ] [MainThread]:   sslkey: None
+[0m18:46:35.800822 [info ] [MainThread]:   sslrootcert: None
+[0m18:46:35.801821 [info ] [MainThread]:   application_name: dbt
+[0m18:46:35.801821 [info ] [MainThread]:   autocommit: False
+[0m18:46:35.803244 [info ] [MainThread]:   retries: 1
+[0m18:46:35.803573 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m18:46:36.096973 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m18:46:36.158870 [debug] [MainThread]: Using postgres connection "debug"
+[0m18:46:36.158870 [debug] [MainThread]: On debug: select 1 as id
+[0m18:46:36.158870 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:46:36.180968 [debug] [MainThread]: SQL status: SELECT 1 in 0.021 seconds
+[0m18:46:36.182975 [debug] [MainThread]: On debug: Close
+[0m18:46:36.182975 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:46:36.182975 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:46:36.182975 [debug] [MainThread]: Command `dbt debug` succeeded at 18:46:36.182975 after 0.89 seconds
+[0m18:46:36.182975 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:46:36.182975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229C7CA0F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229C7CA1D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229C7C01990>]}
+[0m18:46:36.182975 [debug] [MainThread]: Flushing usage events
+[0m18:46:36.982682 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:46:46.882772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001816B1A2690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001816B0EA8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001816B1A2710>]}
+
+
+============================== 18:46:46.882772 | 9e8810cf-86dd-4a21-9806-9ca44eed2656 ==============================
+[0m18:46:46.882772 [info ] [MainThread]: Running with dbt=1.12.0
+[0m18:46:46.882772 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'D:\\credit-scoring-pipeline\\dbt\\logs'}
+[0m18:46:47.158108 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9e8810cf-86dd-4a21-9806-9ca44eed2656', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001816B0D6AD0>]}
+[0m18:46:47.221947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9e8810cf-86dd-4a21-9806-9ca44eed2656', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018166719F50>]}
+[0m18:46:47.221947 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m18:46:47.521442 [debug] [MainThread]: checksum: 5af598c587ee5e09c2e8c9b89806285807d21207f76dfecef796b95fc36cb60f, vars: {}, profile: credit_risk, target: dev, version: 1.12.0
+[0m18:46:47.521442 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:46:47.521442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9e8810cf-86dd-4a21-9806-9ca44eed2656', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001816B4B7590>]}
+[0m18:46:49.650454 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on
+'gold_bureau_features' in package 'credit_risk' (models\gold\_gold__models.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m18:46:49.650454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '9e8810cf-86dd-4a21-9806-9ca44eed2656', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001816BC60D50>]}
+[0m18:46:49.758800 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'silver_pos_cash' in the 'models' section of file 'models\silver\_silver__models.yml'
+[0m18:46:49.760800 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'silver_credit_card' in the 'models' section of file 'models\silver\_silver__models.yml'
+[0m18:46:49.898712 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Model 'model.credit_risk.silver_installments_payments' (models\silver\silver_installments_payments.sql) depends on a source named 'bronze.installments_payments' which was not found
+[0m18:46:49.901228 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 11 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m18:46:49.902698 [debug] [MainThread]: Command `dbt run` failed at 18:46:49.902698 after 3.15 seconds
+[0m18:46:49.903922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001816B284850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001816B286450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001816BE7D1D0>]}
+[0m18:46:49.904928 [debug] [MainThread]: Flushing usage events
+[0m18:46:50.716931 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:48:13.569963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDEDF20AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDEDFDFC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDEDF21FD0>]}
+
+
+============================== 18:48:13.575202 | 64d76dfd-67d6-4895-9ce0-ccfd049d7c6f ==============================
+[0m18:48:13.575202 [info ] [MainThread]: Running with dbt=1.12.0
+[0m18:48:13.576209 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'invocation_command': 'dbt run', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'D:\\credit-scoring-pipeline\\dbt\\logs'}
+[0m18:48:13.791288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '64d76dfd-67d6-4895-9ce0-ccfd049d7c6f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDEE1A5F50>]}
+[0m18:48:13.873435 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '64d76dfd-67d6-4895-9ce0-ccfd049d7c6f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDE944A810>]}
+[0m18:48:13.873435 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m18:48:14.152846 [debug] [MainThread]: checksum: 5af598c587ee5e09c2e8c9b89806285807d21207f76dfecef796b95fc36cb60f, vars: {}, profile: credit_risk, target: dev, version: 1.12.0
+[0m18:48:14.154883 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:48:14.154883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '64d76dfd-67d6-4895-9ce0-ccfd049d7c6f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDEE237310>]}
+[0m18:48:16.141118 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on
+'gold_bureau_features' in package 'credit_risk' (models\gold\_gold__models.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m18:48:16.143483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '64d76dfd-67d6-4895-9ce0-ccfd049d7c6f', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDEEADD3D0>]}
+[0m18:48:16.341333 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Model 'model.credit_risk.silver_installments_payments' (models\silver\silver_installments_payments.sql) depends on a source named 'bronze.installments_payments' which was not found
+[0m18:48:16.342331 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 11 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m18:48:16.343330 [debug] [MainThread]: Command `dbt run` failed at 18:48:16.343330 after 2.89 seconds
+[0m18:48:16.344330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDEE0044D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDEE0045D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CDEDF23FD0>]}
+[0m18:48:16.345522 [debug] [MainThread]: Flushing usage events
+[0m18:48:17.125856 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:49:36.036641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012903610850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012903612C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012903613510>]}
+
+
+============================== 18:49:36.040705 | 2769d7a7-1585-42d4-b2b4-4297b02ea839 ==============================
+[0m18:49:36.040705 [info ] [MainThread]: Running with dbt=1.12.0
+[0m18:49:36.042711 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'invocation_command': 'dbt run', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'D:\\credit-scoring-pipeline\\dbt\\logs'}
+[0m18:49:36.264860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2769d7a7-1585-42d4-b2b4-4297b02ea839', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012903546AD0>]}
+[0m18:49:36.345580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2769d7a7-1585-42d4-b2b4-4297b02ea839', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001297EA7A110>]}
+[0m18:49:36.346739 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m18:49:36.627358 [debug] [MainThread]: checksum: 5af598c587ee5e09c2e8c9b89806285807d21207f76dfecef796b95fc36cb60f, vars: {}, profile: credit_risk, target: dev, version: 1.12.0
+[0m18:49:36.627358 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:49:36.627358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2769d7a7-1585-42d4-b2b4-4297b02ea839', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012903B07310>]}
+[0m18:49:38.466318 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on
+'gold_bureau_features' in package 'credit_risk' (models\gold\_gold__models.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m18:49:38.469841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '2769d7a7-1585-42d4-b2b4-4297b02ea839', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000129041CEBD0>]}
+[0m18:49:38.717542 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Model 'model.credit_risk.silver_installments_payments' (models\silver\silver_installments_payments.sql) depends on a source named 'bronze.installments_payments' which was not found
+[0m18:49:38.718507 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 11 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m18:49:38.720051 [debug] [MainThread]: Command `dbt run` failed at 18:49:38.718507 after 2.81 seconds
+[0m18:49:38.720051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001290419F090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000129036118D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012903612C10>]}
+[0m18:49:38.721111 [debug] [MainThread]: Flushing usage events
+[0m18:49:39.854524 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:51:54.207380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D0C337C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D10D2F210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D10E32610>]}
+
+
+============================== 18:51:54.218264 | 2b99b6e5-3307-4cc0-a3c9-46a4954ae347 ==============================
+[0m18:51:54.218264 [info ] [MainThread]: Running with dbt=1.12.0
+[0m18:51:54.218264 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'D:\\credit-scoring-pipeline\\dbt\\logs'}
+[0m18:51:54.471689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2b99b6e5-3307-4cc0-a3c9-46a4954ae347', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D10F4A690>]}
+[0m18:51:54.554446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2b99b6e5-3307-4cc0-a3c9-46a4954ae347', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D0C35A910>]}
+[0m18:51:54.556454 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m18:51:54.850153 [debug] [MainThread]: checksum: 5af598c587ee5e09c2e8c9b89806285807d21207f76dfecef796b95fc36cb60f, vars: {}, profile: credit_risk, target: dev, version: 1.12.0
+[0m18:51:54.851153 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:51:54.852154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2b99b6e5-3307-4cc0-a3c9-46a4954ae347', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D10FE5250>]}
+[0m18:51:56.817442 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on
+'gold_bureau_features' in package 'credit_risk' (models\gold\_gold__models.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m18:51:56.818551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '2b99b6e5-3307-4cc0-a3c9-46a4954ae347', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D11760650>]}
+[0m18:51:57.005130 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Model 'model.credit_risk.silver_pos_cash_balance' (models\silver\silver_pos_cash_balance.sql) depends on a source named 'bronze."POS_CASH_balance"' which was not found
+[0m18:51:57.015358 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 11 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m18:51:57.015358 [debug] [MainThread]: Command `dbt run` failed at 18:51:57.015358 after 2.92 seconds
+[0m18:51:57.015358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D10E32C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D10E31650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D10E33FD0>]}
+[0m18:51:57.018417 [debug] [MainThread]: Flushing usage events
+[0m18:51:57.773617 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:53:03.787552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3D6A524D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3D6B17F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3D699A8D0>]}
+
+
+============================== 18:53:03.788632 | 33c6ca61-f7f9-472b-9ca9-c0800db57c8c ==============================
+[0m18:53:03.788632 [info ] [MainThread]: Running with dbt=1.12.0
+[0m18:53:03.792662 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'D:\\credit-scoring-pipeline\\dbt\\logs'}
+[0m18:53:04.047017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '33c6ca61-f7f9-472b-9ca9-c0800db57c8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3D6CB22D0>]}
+[0m18:53:04.145856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '33c6ca61-f7f9-472b-9ca9-c0800db57c8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3D1FC8BD0>]}
+[0m18:53:04.147864 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m18:53:04.475565 [debug] [MainThread]: checksum: 5af598c587ee5e09c2e8c9b89806285807d21207f76dfecef796b95fc36cb60f, vars: {}, profile: credit_risk, target: dev, version: 1.12.0
+[0m18:53:04.477574 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:53:04.479582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '33c6ca61-f7f9-472b-9ca9-c0800db57c8c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3D22437D0>]}
+[0m18:53:06.389274 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on
+'gold_bureau_features' in package 'credit_risk' (models\gold\_gold__models.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m18:53:06.389274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '33c6ca61-f7f9-472b-9ca9-c0800db57c8c', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3D767A090>]}
+[0m18:53:06.640695 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Model 'model.credit_risk.silver_pos_cash_balance' (models\silver\silver_pos_cash_balance.sql) depends on a source named 'bronze."POS_CASH_balance"' which was not found
+[0m18:53:06.642690 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 11 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m18:53:06.644691 [debug] [MainThread]: Command `dbt run` failed at 18:53:06.643690 after 2.99 seconds
+[0m18:53:06.644691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3D764BF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3D6A52CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A3D6A51390>]}
+[0m18:53:06.646263 [debug] [MainThread]: Flushing usage events
+[0m18:53:07.522664 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:55:17.752091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A1711FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A172A690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A17E1D50>]}
+
+
+============================== 18:55:17.762572 | ecd0a4ff-11f8-4a5d-8e51-212c76d058f2 ==============================
+[0m18:55:17.762572 [info ] [MainThread]: Running with dbt=1.12.0
+[0m18:55:17.762572 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'D:\\credit-scoring-pipeline\\dbt\\logs'}
+[0m18:55:18.197508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A1881D50>]}
+[0m18:55:18.307305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A29CD1AB50>]}
+[0m18:55:18.309315 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m18:55:18.780720 [debug] [MainThread]: checksum: 5af598c587ee5e09c2e8c9b89806285807d21207f76dfecef796b95fc36cb60f, vars: {}, profile: credit_risk, target: dev, version: 1.12.0
+[0m18:55:18.781720 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:55:18.783180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A1CD7110>]}
+[0m18:55:21.438951 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on
+'gold_bureau_features' in package 'credit_risk' (models\gold\_gold__models.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m18:55:21.441196 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A22744D0>]}
+[0m18:55:21.847504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A22B44D0>]}
+[0m18:55:22.369191 [debug] [MainThread]: Wrote artifact WritableManifest to D:\credit-scoring-pipeline\dbt\target\manifest.json
+[0m18:55:22.387467 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\credit-scoring-pipeline\dbt\target\semantic_manifest.json
+[0m18:55:22.443520 [debug] [MainThread]: Wrote artifact OsiDocument to D:\credit-scoring-pipeline\dbt\target\osi_document.json
+[0m18:55:22.469006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A2298FD0>]}
+[0m18:55:22.473874 [info ] [MainThread]: Found 13 models, 42 data tests, 8 sources, 478 macros
+[0m18:55:22.473874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A247BA10>]}
+[0m18:55:22.473874 [info ] [MainThread]: 
+[0m18:55:22.473874 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:55:22.473874 [info ] [MainThread]: 
+[0m18:55:22.482211 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m18:55:22.492963 [debug] [ThreadPool]: Acquiring new postgres connection 'list_credit_risk'
+[0m18:55:22.509486 [debug] [ThreadPool]: Acquiring new postgres connection 'list_credit_risk'
+[0m18:55:22.601516 [debug] [ThreadPool]: Using postgres connection "list_credit_risk"
+[0m18:55:22.601516 [debug] [ThreadPool]: Using postgres connection "list_credit_risk"
+[0m18:55:22.601516 [debug] [ThreadPool]: On list_credit_risk: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "connection_name": "list_credit_risk"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m18:55:22.601516 [debug] [ThreadPool]: On list_credit_risk: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "connection_name": "list_credit_risk"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m18:55:22.601516 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:55:22.601516 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:55:22.653795 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.046 seconds
+[0m18:55:22.653795 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.046 seconds
+[0m18:55:22.656801 [debug] [ThreadPool]: On list_credit_risk: Close
+[0m18:55:22.657238 [debug] [ThreadPool]: On list_credit_risk: Close
+[0m18:55:22.657238 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_credit_risk, now create_credit_risk_silver)
+[0m18:55:22.661920 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_credit_risk, now create_credit_risk_gold)
+[0m18:55:22.661920 [debug] [ThreadPool]: Creating schema "database: "credit_risk"
+schema: "silver"
+"
+[0m18:55:22.664013 [debug] [ThreadPool]: Creating schema "database: "credit_risk"
+schema: "gold"
+"
+[0m18:55:22.672766 [debug] [ThreadPool]: Using postgres connection "create_credit_risk_silver"
+[0m18:55:22.674383 [debug] [ThreadPool]: Using postgres connection "create_credit_risk_gold"
+[0m18:55:22.674383 [debug] [ThreadPool]: On create_credit_risk_silver: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "connection_name": "create_credit_risk_silver"} */
+create schema if not exists "silver"
+[0m18:55:22.674383 [debug] [ThreadPool]: On create_credit_risk_gold: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "connection_name": "create_credit_risk_gold"} */
+create schema if not exists "gold"
+[0m18:55:22.674383 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:55:22.674383 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:55:22.718694 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.042 seconds
+[0m18:55:22.719700 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.042 seconds
+[0m18:55:22.721704 [debug] [ThreadPool]: On create_credit_risk_silver: COMMIT
+[0m18:55:22.724592 [debug] [ThreadPool]: On create_credit_risk_gold: COMMIT
+[0m18:55:22.724909 [debug] [ThreadPool]: Using postgres connection "create_credit_risk_silver"
+[0m18:55:22.724909 [debug] [ThreadPool]: Using postgres connection "create_credit_risk_gold"
+[0m18:55:22.728618 [debug] [ThreadPool]: On create_credit_risk_silver: COMMIT
+[0m18:55:22.728618 [debug] [ThreadPool]: On create_credit_risk_gold: COMMIT
+[0m18:55:22.728618 [debug] [ThreadPool]: SQL status: COMMIT in 0.002 seconds
+[0m18:55:22.733758 [debug] [ThreadPool]: SQL status: COMMIT in 0.003 seconds
+[0m18:55:22.735899 [debug] [ThreadPool]: On create_credit_risk_silver: Close
+[0m18:55:22.736910 [debug] [ThreadPool]: On create_credit_risk_gold: Close
+[0m18:55:22.740600 [debug] [ThreadPool]: Acquiring new postgres connection 'list_credit_risk_silver'
+[0m18:55:22.746237 [debug] [ThreadPool]: Acquiring new postgres connection 'list_credit_risk_gold'
+[0m18:55:22.757218 [debug] [ThreadPool]: Using postgres connection "list_credit_risk_silver"
+[0m18:55:22.761238 [debug] [ThreadPool]: Using postgres connection "list_credit_risk_gold"
+[0m18:55:22.761238 [debug] [ThreadPool]: On list_credit_risk_silver: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "connection_name": "list_credit_risk_silver"} */
+select
+      'credit_risk' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'silver'
+    union all
+    select
+      'credit_risk' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'silver'
+    union all
+    select
+      'credit_risk' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'silver'
+    union all
+    select distinct
+     'credit_risk' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'silver'
+  
+[0m18:55:22.763248 [debug] [ThreadPool]: On list_credit_risk_gold: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "connection_name": "list_credit_risk_gold"} */
+select
+      'credit_risk' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'gold'
+    union all
+    select
+      'credit_risk' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'gold'
+    union all
+    select
+      'credit_risk' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'gold'
+    union all
+    select distinct
+     'credit_risk' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'gold'
+  
+[0m18:55:22.763248 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:55:22.765258 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:55:22.810948 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.047 seconds
+[0m18:55:22.811945 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.047 seconds
+[0m18:55:22.815598 [debug] [ThreadPool]: On list_credit_risk_silver: ROLLBACK
+[0m18:55:22.819111 [debug] [ThreadPool]: On list_credit_risk_gold: ROLLBACK
+[0m18:55:22.821121 [debug] [ThreadPool]: On list_credit_risk_silver: Close
+[0m18:55:22.822120 [debug] [ThreadPool]: On list_credit_risk_gold: Close
+[0m18:55:22.830116 [debug] [MainThread]: Using postgres connection "master"
+[0m18:55:22.833701 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m18:55:22.835715 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:55:22.860457 [debug] [MainThread]: SQL status: SELECT 0 in 0.028 seconds
+[0m18:55:22.865003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A24A45D0>]}
+[0m18:55:22.868907 [debug] [MainThread]: On master: ROLLBACK
+[0m18:55:22.870907 [debug] [MainThread]: On master: COMMIT
+[0m18:55:22.872256 [debug] [MainThread]: Using postgres connection "master"
+[0m18:55:22.873742 [debug] [MainThread]: On master: COMMIT
+[0m18:55:22.875751 [debug] [MainThread]: SQL status: COMMIT in 0.002 seconds
+[0m18:55:22.877759 [debug] [MainThread]: On master: Close
+[0m18:55:22.890901 [debug] [Thread-1 (]: Began running node model.credit_risk.silver_application
+[0m18:55:22.891422 [debug] [Thread-2 (]: Began running node model.credit_risk.silver_bureau_balance
+[0m18:55:22.891422 [debug] [Thread-3 (]: Began running node model.credit_risk.silver_credit_card_balance
+[0m18:55:22.891422 [debug] [Thread-4 (]: Began running node model.credit_risk.silver_installments_payments
+[0m18:55:22.891422 [info ] [Thread-1 (]: 1 of 13 START sql table model silver.silver_application ........................ [RUN]
+[0m18:55:22.891422 [info ] [Thread-2 (]: 2 of 13 START sql table model silver.silver_bureau_balance ..................... [RUN]
+[0m18:55:22.891422 [info ] [Thread-3 (]: 3 of 13 START sql table model silver.silver_credit_card_balance ................ [RUN]
+[0m18:55:22.901917 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.credit_risk.silver_application'
+[0m18:55:22.891422 [info ] [Thread-4 (]: 4 of 13 START sql table model silver.silver_installments_payments .............. [RUN]
+[0m18:55:22.903927 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.credit_risk.silver_bureau_balance'
+[0m18:55:22.904926 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.credit_risk.silver_credit_card_balance'
+[0m18:55:22.906414 [debug] [Thread-1 (]: Began compiling node model.credit_risk.silver_application
+[0m18:55:22.906414 [debug] [Thread-4 (]: Acquiring new postgres connection 'model.credit_risk.silver_installments_payments'
+[0m18:55:22.909709 [debug] [Thread-2 (]: Began compiling node model.credit_risk.silver_bureau_balance
+[0m18:55:22.909709 [debug] [Thread-3 (]: Began compiling node model.credit_risk.silver_credit_card_balance
+[0m18:55:22.927246 [debug] [Thread-1 (]: Writing injected SQL for node "model.credit_risk.silver_application"
+[0m18:55:22.929252 [debug] [Thread-4 (]: Began compiling node model.credit_risk.silver_installments_payments
+[0m18:55:22.934698 [debug] [Thread-2 (]: Writing injected SQL for node "model.credit_risk.silver_bureau_balance"
+[0m18:55:22.940202 [debug] [Thread-3 (]: Writing injected SQL for node "model.credit_risk.silver_credit_card_balance"
+[0m18:55:22.943214 [debug] [Thread-4 (]: Writing injected SQL for node "model.credit_risk.silver_installments_payments"
+[0m18:55:22.945286 [debug] [Thread-3 (]: Began executing node model.credit_risk.silver_credit_card_balance
+[0m18:55:22.950325 [debug] [Thread-1 (]: Began executing node model.credit_risk.silver_application
+[0m18:55:22.945286 [debug] [Thread-2 (]: Began executing node model.credit_risk.silver_bureau_balance
+[0m18:55:22.965931 [debug] [Thread-4 (]: Began executing node model.credit_risk.silver_installments_payments
+[0m18:55:23.021607 [debug] [Thread-3 (]: Writing runtime sql for node "model.credit_risk.silver_credit_card_balance"
+[0m18:55:23.025633 [debug] [Thread-1 (]: Writing runtime sql for node "model.credit_risk.silver_application"
+[0m18:55:23.025633 [debug] [Thread-2 (]: Writing runtime sql for node "model.credit_risk.silver_bureau_balance"
+[0m18:55:23.038780 [debug] [Thread-4 (]: Writing runtime sql for node "model.credit_risk.silver_installments_payments"
+[0m18:55:23.040266 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.silver_credit_card_balance"
+[0m18:55:23.040266 [debug] [Thread-1 (]: Using postgres connection "model.credit_risk.silver_application"
+[0m18:55:23.040266 [debug] [Thread-3 (]: On model.credit_risk.silver_credit_card_balance: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_credit_card_balance"} */
+
+  
+    
+
+  create  table "credit_risk"."silver"."silver_credit_card_balance__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with cc as (
+    select
+        "SK_ID_CURR"                    as sk_id_curr,
+        "SK_ID_PREV"                    as sk_id_prev,
+        "MONTHS_BALANCE"                as months_balance,
+        "AMT_BALANCE"                   as amt_balance,
+        "AMT_CREDIT_LIMIT_ACTUAL"       as amt_credit_limit_actual,
+        "AMT_DRAWINGS_ATM_CURRENT"      as amt_drawings_atm_current,
+        "AMT_INST_MIN_REGULARITY"       as amt_inst_min_regularity,
+        "AMT_PAYMENT_CURRENT"           as amt_payment_current,
+        "SK_DPD"                        as sk_dpd
+    from "credit_risk"."bronze"."credit_card_balance"
+),
+
+cleaned as (
+    select
+        *,
+        amt_balance / nullif(amt_credit_limit_actual, 0)              as limit_use,
+        amt_payment_current / nullif(amt_inst_min_regularity, 0)      as payment_div_min,
+        amt_drawings_atm_current / nullif(amt_credit_limit_actual, 0) as drawing_limit_ratio,
+        case when sk_dpd > 0 then 1 else 0 end                        as late_payment
+    from cc
+),
+
+-- rolled up to loan (SK_ID_PREV) grain
+agg as (
+    select
+        sk_id_prev,
+        max(sk_id_curr)                                         as sk_id_curr,  -- constant per loan
+        avg(amt_balance)                                        as amt_balance_mean,
+        max(amt_balance)                                        as amt_balance_max,
+        avg(limit_use)                                          as limit_use_mean,
+        max(limit_use)                                          as limit_use_max,
+        sum(late_payment)                                       as late_payment_sum,
+        avg(payment_div_min)                                    as payment_div_min_mean,
+        avg(drawing_limit_ratio)                                as drawing_limit_ratio_mean
+    from cleaned
+    group by sk_id_prev
+)
+
+select * from agg
+  );
+  
+[0m18:55:23.040266 [debug] [Thread-4 (]: Using postgres connection "model.credit_risk.silver_installments_payments"
+[0m18:55:23.046124 [debug] [Thread-2 (]: Using postgres connection "model.credit_risk.silver_bureau_balance"
+[0m18:55:23.046124 [debug] [Thread-1 (]: On model.credit_risk.silver_application: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_application"} */
+
+  
+    
+
+  create  table "credit_risk"."silver"."silver_application__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with train as (
+    select *, 1 as is_train
+    from "credit_risk"."bronze"."application_train"
+),
+
+test as (
+    select *, null::int as "TARGET", 0 as is_train
+    from "credit_risk"."bronze"."application_test"
+),
+
+unioned as (
+    select * from train
+    union all
+    select * from test
+),
+
+cleaned as (
+    select
+        *,
+        case when "DAYS_EMPLOYED" = 365243 then null else "DAYS_EMPLOYED" end as days_employed_clean
+    from unioned
+    where "CODE_GENDER" != 'XNA'
+      and "AMT_INCOME_TOTAL" < 20000000
+),
+
+final as (
+    select
+        "SK_ID_CURR"                as sk_id_curr,
+        "TARGET"                    as target,
+        is_train,
+
+        -- raw fields kept
+        "CODE_GENDER"                as code_gender,
+        "ORGANIZATION_TYPE"          as organization_type,
+        "OCCUPATION_TYPE"            as occupation_type,
+        "NAME_EDUCATION_TYPE"        as name_education_type,
+        "DAYS_BIRTH"                 as days_birth,
+        days_employed_clean          as days_employed,
+        "DAYS_ID_PUBLISH"            as days_id_publish,
+        "DAYS_REGISTRATION"          as days_registration,
+        "DAYS_LAST_PHONE_CHANGE"     as days_last_phone_change,
+        "AMT_CREDIT"                 as amt_credit,
+        "AMT_ANNUITY"                as amt_annuity,
+        "AMT_GOODS_PRICE"            as amt_goods_price,
+        "AMT_INCOME_TOTAL"           as amt_income_total,
+        "EXT_SOURCE_1"               as ext_source_1,
+        "EXT_SOURCE_2"               as ext_source_2,
+        "EXT_SOURCE_3"               as ext_source_3,
+
+        -- derived: ext source aggregates
+        (coalesce("EXT_SOURCE_1", 0) + coalesce("EXT_SOURCE_2", 0) + coalesce("EXT_SOURCE_3", 0))
+            / nullif(
+                (case when "EXT_SOURCE_1" is not null then 1 else 0 end
+               + case when "EXT_SOURCE_2" is not null then 1 else 0 end
+               + case when "EXT_SOURCE_3" is not null then 1 else 0 end), 0
+              )                                                        as ext_sources_mean,
+        least("EXT_SOURCE_1", "EXT_SOURCE_2", "EXT_SOURCE_3")          as ext_sources_min,
+        greatest("EXT_SOURCE_1", "EXT_SOURCE_2", "EXT_SOURCE_3")       as ext_sources_max,
+        "EXT_SOURCE_1" * "EXT_SOURCE_2" * "EXT_SOURCE_3"               as ext_sources_prod,
+        ("EXT_SOURCE_1" * 2 + "EXT_SOURCE_2" * 1 + "EXT_SOURCE_3" * 3) as ext_sources_weighted,
+
+        -- derived: credit ratios
+        "AMT_CREDIT" / nullif("AMT_ANNUITY", 0)                        as credit_to_annuity_ratio,
+        "AMT_CREDIT" / nullif("AMT_GOODS_PRICE", 0)                    as credit_to_goods_ratio,
+        "AMT_ANNUITY" / nullif("AMT_INCOME_TOTAL", 0)                  as annuity_to_income_ratio,
+        "AMT_INCOME_TOTAL" / nullif(days_employed_clean, 0)            as income_to_employed_ratio,
+        days_employed_clean / nullif("DAYS_BIRTH", 0)                  as employed_to_birth_ratio,
+        "DAYS_LAST_PHONE_CHANGE" / nullif("DAYS_BIRTH", 0)             as phone_to_birth_ratio
+
+    from cleaned
+)
+
+select * from final
+  );
+  
+[0m18:55:23.048249 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m18:55:23.048249 [debug] [Thread-4 (]: On model.credit_risk.silver_installments_payments: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_installments_payments"} */
+
+  
+    
+
+  create  table "credit_risk"."silver"."silver_installments_payments__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with pay as (
+    select
+        "SK_ID_CURR"           as sk_id_curr,
+        "SK_ID_PREV"           as sk_id_prev,
+        "DAYS_INSTALMENT"      as days_instalment,
+        "DAYS_ENTRY_PAYMENT"   as days_entry_payment,
+        "AMT_INSTALMENT"       as amt_instalment,
+        "AMT_PAYMENT"          as amt_payment
+    from "credit_risk"."bronze"."installments_payments"
+),
+
+final as (
+    select
+        *,
+        greatest(days_entry_payment - days_instalment, 0)             as dpd,
+        greatest(days_instalment - days_entry_payment, 0)             as dbd,
+        (days_instalment - days_entry_payment) < 0                    as is_late_payment,
+        amt_payment / nullif(amt_instalment, 0)                       as payment_ratio,
+        case
+            when (days_instalment - days_entry_payment) < 0
+            then amt_payment / nullif(amt_instalment, 0)
+            else 0
+        end                                                            as late_payment_ratio,
+        case when (days_instalment - days_entry_payment) < 0
+             and (amt_payment / nullif(amt_instalment, 0)) > 0.05
+             then 1 else 0 end                                         as significant_late_payment,
+        case when greatest(days_entry_payment - days_instalment, 0) >= 7 then 1 else 0 end as dpd_7,
+        row_number() over (
+            partition by sk_id_curr, sk_id_prev
+            order by days_instalment desc
+        ) as installment_recency_rank
+    from pay
+)
+
+select * from final
+  );
+  
+[0m18:55:23.050728 [debug] [Thread-2 (]: On model.credit_risk.silver_bureau_balance: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_bureau_balance"} */
+
+  
+    
+
+  create  table "credit_risk"."silver"."silver_bureau_balance__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with bb as (
+    select
+        "SK_ID_BUREAU"   as sk_id_bureau,
+        "MONTHS_BALANCE" as months_balance,
+        "STATUS"         as status
+    from "credit_risk"."bronze"."bureau_balance"
+),
+
+agg as (
+    select
+        sk_id_bureau,
+        min(months_balance)                                         as months_balance_min,
+        max(months_balance)                                         as months_balance_max,
+        avg(months_balance)                                         as months_balance_mean,
+        count(*)                                                    as months_balance_size,
+        avg(case when status = '0' then 1.0 else 0.0 end)           as status_0_mean,
+        avg(case when status = '1' then 1.0 else 0.0 end)           as status_1_mean,
+        avg(case when status in ('1','2','3','4','5') then 1.0 else 0.0 end) as status_12345_mean,
+        avg(case when status = 'C' then 1.0 else 0.0 end)           as status_c_mean,
+        avg(case when status = 'X' then 1.0 else 0.0 end)           as status_x_mean
+    from bb
+    group by sk_id_bureau
+)
+
+select * from agg
+  );
+  
+[0m18:55:23.052255 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:55:23.053251 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m18:55:23.055254 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m18:55:23.085791 [debug] [Thread-1 (]: Postgres adapter: Postgres error: UNION types bigint and text cannot be matched
+LINE 25:     select * from test
+                    ^
+
+[0m18:55:23.086828 [debug] [Thread-1 (]: On model.credit_risk.silver_application: ROLLBACK
+[0m18:55:23.087835 [debug] [Thread-1 (]: On model.credit_risk.silver_application: Close
+[0m18:55:23.456499 [debug] [Thread-1 (]: Database Error in model silver_application (models\silver\silver_application.sql)
+  UNION types bigint and text cannot be matched
+  LINE 25:     select * from test
+                      ^
+  compiled code at target\run\credit_risk\models\silver\silver_application.sql
+[0m18:55:23.463116 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A27E94D0>]}
+[0m18:55:23.465151 [error] [Thread-1 (]: 1 of 13 ERROR creating sql table model silver.silver_application ............... [[31mERROR[0m in 0.56s]
+[0m18:55:23.472004 [debug] [Thread-1 (]: Finished running node model.credit_risk.silver_application
+[0m18:55:23.473516 [debug] [Thread-1 (]: Began running node model.credit_risk.silver_pos_cash_balance
+[0m18:55:23.475533 [debug] [Thread-7 (]: Marking all children of 'model.credit_risk.silver_application' to be skipped because of status 'error'.  Reason: Database Error in model silver_application (models\silver\silver_application.sql)
+  UNION types bigint and text cannot be matched
+  LINE 25:     select * from test
+                      ^
+  compiled code at target\run\credit_risk\models\silver\silver_application.sql.
+[0m18:55:23.477043 [info ] [Thread-1 (]: 5 of 13 START sql table model silver.silver_pos_cash_balance ................... [RUN]
+[0m18:55:23.481277 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.credit_risk.silver_application, now model.credit_risk.silver_pos_cash_balance)
+[0m18:55:23.482388 [debug] [Thread-1 (]: Began compiling node model.credit_risk.silver_pos_cash_balance
+[0m18:55:23.491317 [debug] [Thread-1 (]: Writing injected SQL for node "model.credit_risk.silver_pos_cash_balance"
+[0m18:55:23.495418 [debug] [Thread-1 (]: Began executing node model.credit_risk.silver_pos_cash_balance
+[0m18:55:23.504934 [debug] [Thread-1 (]: Writing runtime sql for node "model.credit_risk.silver_pos_cash_balance"
+[0m18:55:23.509250 [debug] [Thread-1 (]: Using postgres connection "model.credit_risk.silver_pos_cash_balance"
+[0m18:55:23.511265 [debug] [Thread-1 (]: On model.credit_risk.silver_pos_cash_balance: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_pos_cash_balance"} */
+
+  
+    
+
+  create  table "credit_risk"."silver"."silver_pos_cash_balance__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with pos as (
+    select
+        "SK_ID_CURR"              as sk_id_curr,
+        "SK_ID_PREV"              as sk_id_prev,
+        "MONTHS_BALANCE"          as months_balance,
+        "CNT_INSTALMENT"          as cnt_instalment,
+        "CNT_INSTALMENT_FUTURE"   as cnt_instalment_future,
+        "NAME_CONTRACT_STATUS"    as name_contract_status,
+        "SK_DPD"                  as sk_dpd,
+        "SK_DPD_DEF"              as sk_dpd_def
+    from "credit_risk"."bronze"."POS_CASH_balance"
+),
+
+cleaned as (
+    select
+        *,
+        case when sk_dpd > 0 then 1 else 0 end                 as late_payment,
+        (name_contract_status = 'Completed')                   as is_completed,
+        cnt_instalment_future / nullif(cnt_instalment, 0)       as remaining_instalments_ratio,
+        row_number() over (
+            partition by sk_id_prev
+            order by months_balance desc
+        ) as recency_rank
+    from pos
+),
+
+-- rolled up to loan (SK_ID_PREV) grain
+agg as (
+    select
+        sk_id_prev,
+        max(sk_id_curr)                                         as sk_id_curr,  -- constant per loan
+        count(*)                                                as months_count,
+        max(sk_dpd)                                             as sk_dpd_max,
+        avg(sk_dpd)                                             as sk_dpd_mean,
+        avg(late_payment)                                       as late_payment_rate,
+        max(case when is_completed then 1 else 0 end)           as is_completed,
+        max(case when recency_rank = 1 then remaining_instalments_ratio end) as remaining_instalments_ratio
+    from cleaned
+    group by sk_id_prev
+)
+
+select * from agg
+  );
+  
+[0m18:55:23.511265 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:55:34.784147 [debug] [Thread-3 (]: SQL status: SELECT 104307 in 11.736 seconds
+[0m18:55:34.810783 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.silver_credit_card_balance"
+[0m18:55:34.812816 [debug] [Thread-3 (]: On model.credit_risk.silver_credit_card_balance: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_credit_card_balance"} */
+alter table "credit_risk"."silver"."silver_credit_card_balance__dbt_tmp" rename to "silver_credit_card_balance"
+[0m18:55:34.821088 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.007 seconds
+[0m18:55:34.876058 [debug] [Thread-3 (]: On model.credit_risk.silver_credit_card_balance: COMMIT
+[0m18:55:34.879330 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.silver_credit_card_balance"
+[0m18:55:34.881359 [debug] [Thread-3 (]: On model.credit_risk.silver_credit_card_balance: COMMIT
+[0m18:55:34.895981 [debug] [Thread-3 (]: SQL status: COMMIT in 0.013 seconds
+[0m18:55:34.913190 [debug] [Thread-3 (]: Applying DROP to: "credit_risk"."silver"."silver_credit_card_balance__dbt_backup"
+[0m18:55:34.927257 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.silver_credit_card_balance"
+[0m18:55:34.929290 [debug] [Thread-3 (]: On model.credit_risk.silver_credit_card_balance: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_credit_card_balance"} */
+drop table if exists "credit_risk"."silver"."silver_credit_card_balance__dbt_backup" cascade
+[0m18:55:34.937928 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.007 seconds
+[0m18:55:34.946969 [debug] [Thread-3 (]: On model.credit_risk.silver_credit_card_balance: Close
+[0m18:55:34.950046 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A2792A50>]}
+[0m18:55:34.952565 [info ] [Thread-3 (]: 3 of 13 OK created sql table model silver.silver_credit_card_balance ........... [[32mSELECT 104307[0m in 12.04s]
+[0m18:55:34.954232 [debug] [Thread-3 (]: Finished running node model.credit_risk.silver_credit_card_balance
+[0m18:55:34.958941 [debug] [Thread-3 (]: Began running node model.credit_risk.silver_previous_application
+[0m18:55:34.966421 [info ] [Thread-3 (]: 6 of 13 START sql table model silver.silver_previous_application ............... [RUN]
+[0m18:55:34.970871 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.credit_risk.silver_credit_card_balance, now model.credit_risk.silver_previous_application)
+[0m18:55:34.971870 [debug] [Thread-3 (]: Began compiling node model.credit_risk.silver_previous_application
+[0m18:55:34.982324 [debug] [Thread-3 (]: Writing injected SQL for node "model.credit_risk.silver_previous_application"
+[0m18:55:34.986387 [debug] [Thread-3 (]: Began executing node model.credit_risk.silver_previous_application
+[0m18:55:35.014528 [debug] [Thread-3 (]: Writing runtime sql for node "model.credit_risk.silver_previous_application"
+[0m18:55:35.017249 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.silver_previous_application"
+[0m18:55:35.018787 [debug] [Thread-3 (]: On model.credit_risk.silver_previous_application: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_previous_application"} */
+
+  
+    
+
+  create  table "credit_risk"."silver"."silver_previous_application__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with prev as (
+    select
+        "SK_ID_CURR"                  as sk_id_curr,
+        "SK_ID_PREV"                  as sk_id_prev,
+        "NAME_CONTRACT_STATUS"        as name_contract_status,
+        "NAME_CONTRACT_TYPE"          as name_contract_type,
+        "DAYS_DECISION"               as days_decision,
+        case when "DAYS_TERMINATION" = 365243 then null else "DAYS_TERMINATION" end as days_termination,
+        case when "DAYS_LAST_DUE_1ST_VERSION" = 365243 then null else "DAYS_LAST_DUE_1ST_VERSION" end as days_last_due_1st_version,
+        "AMT_APPLICATION"             as amt_application,
+        "AMT_CREDIT"                  as amt_credit,
+        "AMT_ANNUITY"                 as amt_annuity,
+        "CNT_PAYMENT"                 as cnt_payment
+    from "credit_risk"."bronze"."previous_application"
+),
+
+final as (
+    select
+        *,
+        amt_application - amt_credit                                  as application_credit_diff,
+        amt_application / nullif(amt_credit, 0)                       as application_credit_ratio,
+        amt_credit / nullif(amt_annuity, 0)                           as credit_to_annuity_ratio,
+        (amt_annuity * cnt_payment / nullif(amt_credit, 0) - 1)
+            / nullif(cnt_payment, 0)                                  as simple_interests,
+        (name_contract_status = 'Approved')                           as is_approved,
+        (name_contract_status = 'Refused')                            as is_refused,
+        (name_contract_type = 'Cash loans')                           as is_cash_loan,
+        (name_contract_type = 'Consumer loans')                       as is_consumer_loan
+    from prev
+)
+
+select * from final
+  );
+  
+[0m18:55:35.026269 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m18:55:49.154679 [debug] [Thread-3 (]: SQL status: SELECT 1670214 in 14.128 seconds
+[0m18:55:49.162824 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.silver_previous_application"
+[0m18:55:49.164347 [debug] [Thread-3 (]: On model.credit_risk.silver_previous_application: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_previous_application"} */
+alter table "credit_risk"."silver"."silver_previous_application__dbt_tmp" rename to "silver_previous_application"
+[0m18:55:49.167381 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m18:55:49.171421 [debug] [Thread-3 (]: On model.credit_risk.silver_previous_application: COMMIT
+[0m18:55:49.171421 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.silver_previous_application"
+[0m18:55:49.174830 [debug] [Thread-3 (]: On model.credit_risk.silver_previous_application: COMMIT
+[0m18:55:49.188229 [debug] [Thread-3 (]: SQL status: COMMIT in 0.012 seconds
+[0m18:55:49.192478 [debug] [Thread-3 (]: Applying DROP to: "credit_risk"."silver"."silver_previous_application__dbt_backup"
+[0m18:55:49.194480 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.silver_previous_application"
+[0m18:55:49.195991 [debug] [Thread-3 (]: On model.credit_risk.silver_previous_application: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_previous_application"} */
+drop table if exists "credit_risk"."silver"."silver_previous_application__dbt_backup" cascade
+[0m18:55:49.198510 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m18:55:49.202061 [debug] [Thread-3 (]: On model.credit_risk.silver_previous_application: Close
+[0m18:55:49.204071 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A2709850>]}
+[0m18:55:49.205587 [info ] [Thread-3 (]: 6 of 13 OK created sql table model silver.silver_previous_application .......... [[32mSELECT 1670214[0m in 14.23s]
+[0m18:55:49.207588 [debug] [Thread-3 (]: Finished running node model.credit_risk.silver_previous_application
+[0m18:55:49.209093 [debug] [Thread-3 (]: Began running node model.credit_risk.gold_credit_card_features
+[0m18:55:49.210803 [info ] [Thread-3 (]: 7 of 13 START sql table model gold.gold_credit_card_features ................... [RUN]
+[0m18:55:49.212323 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.credit_risk.silver_previous_application, now model.credit_risk.gold_credit_card_features)
+[0m18:55:49.214616 [debug] [Thread-3 (]: Began compiling node model.credit_risk.gold_credit_card_features
+[0m18:55:49.236788 [debug] [Thread-3 (]: Writing injected SQL for node "model.credit_risk.gold_credit_card_features"
+[0m18:55:49.241464 [debug] [Thread-3 (]: Began executing node model.credit_risk.gold_credit_card_features
+[0m18:55:49.263964 [debug] [Thread-3 (]: Writing runtime sql for node "model.credit_risk.gold_credit_card_features"
+[0m18:55:49.269539 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.gold_credit_card_features"
+[0m18:55:49.273100 [debug] [Thread-3 (]: On model.credit_risk.gold_credit_card_features: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.gold_credit_card_features"} */
+
+  
+    
+
+  create  table "credit_risk"."gold"."gold_credit_card_features__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with loans as (
+    select * from "credit_risk"."silver"."silver_credit_card_balance"
+),
+
+agg as (
+    select
+        sk_id_curr,
+        count(*)                                                as cc_loan_count,
+        avg(amt_balance_mean)                                   as cc_amt_balance_mean,
+        max(amt_balance_max)                                    as cc_amt_balance_max,
+        avg(limit_use_mean)                                     as cc_limit_use_mean,
+        max(limit_use_max)                                      as cc_limit_use_max,
+        sum(late_payment_sum)                                   as cc_late_payment_sum,
+        avg(payment_div_min_mean)                               as cc_payment_div_min_mean,
+        avg(drawing_limit_ratio_mean)                           as cc_drawing_limit_ratio_mean
+    from loans
+    group by sk_id_curr
+)
+
+select * from agg
+  );
+  
+[0m18:55:49.277836 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m18:55:50.567928 [debug] [Thread-3 (]: SQL status: SELECT 103558 in 1.289 seconds
+[0m18:55:50.572558 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.gold_credit_card_features"
+[0m18:55:50.576607 [debug] [Thread-3 (]: On model.credit_risk.gold_credit_card_features: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.gold_credit_card_features"} */
+alter table "credit_risk"."gold"."gold_credit_card_features__dbt_tmp" rename to "gold_credit_card_features"
+[0m18:55:50.620599 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.045 seconds
+[0m18:55:50.631309 [debug] [Thread-3 (]: On model.credit_risk.gold_credit_card_features: COMMIT
+[0m18:55:50.632700 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.gold_credit_card_features"
+[0m18:55:50.633235 [debug] [Thread-3 (]: On model.credit_risk.gold_credit_card_features: COMMIT
+[0m18:55:50.644485 [debug] [Thread-3 (]: SQL status: COMMIT in 0.010 seconds
+[0m18:55:50.648509 [debug] [Thread-3 (]: Applying DROP to: "credit_risk"."gold"."gold_credit_card_features__dbt_backup"
+[0m18:55:50.651552 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.gold_credit_card_features"
+[0m18:55:50.652072 [debug] [Thread-3 (]: On model.credit_risk.gold_credit_card_features: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.gold_credit_card_features"} */
+drop table if exists "credit_risk"."gold"."gold_credit_card_features__dbt_backup" cascade
+[0m18:55:50.655570 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m18:55:50.658910 [debug] [Thread-3 (]: On model.credit_risk.gold_credit_card_features: Close
+[0m18:55:50.661449 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A27D6F10>]}
+[0m18:55:50.663467 [info ] [Thread-3 (]: 7 of 13 OK created sql table model gold.gold_credit_card_features .............. [[32mSELECT 103558[0m in 1.45s]
+[0m18:55:50.666984 [debug] [Thread-3 (]: Finished running node model.credit_risk.gold_credit_card_features
+[0m18:55:50.667509 [debug] [Thread-3 (]: Began running node model.credit_risk.gold_previous_application_features
+[0m18:55:50.669028 [info ] [Thread-3 (]: 8 of 13 START sql table model gold.gold_previous_application_features .......... [RUN]
+[0m18:55:50.671051 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.credit_risk.gold_credit_card_features, now model.credit_risk.gold_previous_application_features)
+[0m18:55:50.673059 [debug] [Thread-3 (]: Began compiling node model.credit_risk.gold_previous_application_features
+[0m18:55:50.681780 [debug] [Thread-3 (]: Writing injected SQL for node "model.credit_risk.gold_previous_application_features"
+[0m18:55:50.684310 [debug] [Thread-3 (]: Began executing node model.credit_risk.gold_previous_application_features
+[0m18:55:50.697700 [debug] [Thread-3 (]: Writing runtime sql for node "model.credit_risk.gold_previous_application_features"
+[0m18:55:50.735471 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.gold_previous_application_features"
+[0m18:55:50.736980 [debug] [Thread-3 (]: On model.credit_risk.gold_previous_application_features: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.gold_previous_application_features"} */
+
+  
+    
+
+  create  table "credit_risk"."gold"."gold_previous_application_features__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with prev as (
+    select * from "credit_risk"."silver"."silver_previous_application"
+),
+
+refused as (
+    select
+        sk_id_curr,
+        avg(case when is_refused then 1.0 else 0.0 end)        as prev_name_contract_status_refused_mean
+    from prev
+    group by sk_id_curr
+),
+
+cash as (
+    select
+        sk_id_curr,
+        avg(simple_interests)                                  as prev_cash_simple_interests_mean,
+        max(simple_interests)                                  as prev_cash_simple_interests_max
+    from prev
+    where is_cash_loan
+    group by sk_id_curr
+),
+
+last_24m as (
+    select
+        sk_id_curr,
+        max(simple_interests)                                  as prev_last24m_simple_interests_max,
+        avg(days_last_due_1st_version)                         as prev_last24m_days_last_due_1st_version_mean,
+        max(days_last_due_1st_version)                         as prev_last24m_days_last_due_1st_version_max
+    from prev
+    where days_decision >= -720
+    group by sk_id_curr
+),
+
+approved as (
+    select
+        sk_id_curr,
+        avg(amt_annuity)                                       as approved_amt_annuity_mean,
+        max(amt_annuity)                                       as approved_amt_annuity_max,
+        max(days_termination)                                  as prev_days_termination_max
+    from prev
+    where is_approved
+    group by sk_id_curr
+)
+
+select
+    p.sk_id_curr,
+    r.prev_name_contract_status_refused_mean,
+    c.prev_cash_simple_interests_mean,
+    c.prev_cash_simple_interests_max,
+    l.prev_last24m_simple_interests_max,
+    l.prev_last24m_days_last_due_1st_version_mean,
+    l.prev_last24m_days_last_due_1st_version_max,
+    a.approved_amt_annuity_mean,
+    a.approved_amt_annuity_max,
+    a.prev_days_termination_max
+from (select distinct sk_id_curr from prev) p
+left join refused  r on p.sk_id_curr = r.sk_id_curr
+left join cash     c on p.sk_id_curr = c.sk_id_curr
+left join last_24m l on p.sk_id_curr = l.sk_id_curr
+left join approved a on p.sk_id_curr = a.sk_id_curr
+  );
+  
+[0m18:55:50.738005 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m18:56:06.252490 [debug] [Thread-1 (]: SQL status: SELECT 936325 in 42.740 seconds
+[0m18:56:06.256532 [debug] [Thread-1 (]: Using postgres connection "model.credit_risk.silver_pos_cash_balance"
+[0m18:56:06.258491 [debug] [Thread-1 (]: On model.credit_risk.silver_pos_cash_balance: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_pos_cash_balance"} */
+alter table "credit_risk"."silver"."silver_pos_cash_balance__dbt_tmp" rename to "silver_pos_cash_balance"
+[0m18:56:06.261300 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m18:56:06.264556 [debug] [Thread-1 (]: On model.credit_risk.silver_pos_cash_balance: COMMIT
+[0m18:56:06.265174 [debug] [Thread-1 (]: Using postgres connection "model.credit_risk.silver_pos_cash_balance"
+[0m18:56:06.266691 [debug] [Thread-1 (]: On model.credit_risk.silver_pos_cash_balance: COMMIT
+[0m18:56:06.287148 [debug] [Thread-1 (]: SQL status: COMMIT in 0.020 seconds
+[0m18:56:06.291199 [debug] [Thread-1 (]: Applying DROP to: "credit_risk"."silver"."silver_pos_cash_balance__dbt_backup"
+[0m18:56:06.293205 [debug] [Thread-1 (]: Using postgres connection "model.credit_risk.silver_pos_cash_balance"
+[0m18:56:06.295212 [debug] [Thread-1 (]: On model.credit_risk.silver_pos_cash_balance: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_pos_cash_balance"} */
+drop table if exists "credit_risk"."silver"."silver_pos_cash_balance__dbt_backup" cascade
+[0m18:56:06.296965 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m18:56:06.299498 [debug] [Thread-1 (]: On model.credit_risk.silver_pos_cash_balance: Close
+[0m18:56:06.301506 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A2C6BA90>]}
+[0m18:56:06.301506 [info ] [Thread-1 (]: 5 of 13 OK created sql table model silver.silver_pos_cash_balance .............. [[32mSELECT 936325[0m in 42.82s]
+[0m18:56:06.304013 [debug] [Thread-1 (]: Finished running node model.credit_risk.silver_pos_cash_balance
+[0m18:56:06.304013 [debug] [Thread-1 (]: Began running node model.credit_risk.gold_pos_cash_features
+[0m18:56:06.304013 [info ] [Thread-1 (]: 9 of 13 START sql table model gold.gold_pos_cash_features ...................... [RUN]
+[0m18:56:06.308171 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.credit_risk.silver_pos_cash_balance, now model.credit_risk.gold_pos_cash_features)
+[0m18:56:06.309190 [debug] [Thread-1 (]: Began compiling node model.credit_risk.gold_pos_cash_features
+[0m18:56:06.311910 [debug] [Thread-1 (]: Writing injected SQL for node "model.credit_risk.gold_pos_cash_features"
+[0m18:56:06.314989 [debug] [Thread-1 (]: Began executing node model.credit_risk.gold_pos_cash_features
+[0m18:56:06.321604 [debug] [Thread-1 (]: Writing runtime sql for node "model.credit_risk.gold_pos_cash_features"
+[0m18:56:06.326151 [debug] [Thread-1 (]: Using postgres connection "model.credit_risk.gold_pos_cash_features"
+[0m18:56:06.327158 [debug] [Thread-1 (]: On model.credit_risk.gold_pos_cash_features: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.gold_pos_cash_features"} */
+
+  
+    
+
+  create  table "credit_risk"."gold"."gold_pos_cash_features__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with loans as (
+    select * from "credit_risk"."silver"."silver_pos_cash_balance"
+),
+
+agg as (
+    select
+        sk_id_curr,
+        count(*)                                                as pos_loan_count,
+        max(sk_dpd_max)                                         as pos_sk_dpd_max,
+        avg(sk_dpd_mean)                                        as pos_sk_dpd_mean,
+        avg(late_payment_rate)                                  as pos_late_payment_mean,
+        avg(is_completed)                                       as pos_loan_completed_mean,
+        avg(remaining_instalments_ratio)                        as pos_remaining_instalments_ratio_mean
+    from loans
+    group by sk_id_curr
+)
+
+select * from agg
+  );
+  
+[0m18:56:06.327158 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:56:08.754594 [debug] [Thread-3 (]: SQL status: SELECT 338857 in 18.017 seconds
+[0m18:56:08.760233 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.gold_previous_application_features"
+[0m18:56:08.760233 [debug] [Thread-3 (]: On model.credit_risk.gold_previous_application_features: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.gold_previous_application_features"} */
+alter table "credit_risk"."gold"."gold_previous_application_features__dbt_tmp" rename to "gold_previous_application_features"
+[0m18:56:08.762773 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m18:56:08.763289 [debug] [Thread-3 (]: On model.credit_risk.gold_previous_application_features: COMMIT
+[0m18:56:08.766603 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.gold_previous_application_features"
+[0m18:56:08.767280 [debug] [Thread-3 (]: On model.credit_risk.gold_previous_application_features: COMMIT
+[0m18:56:08.817944 [debug] [Thread-3 (]: SQL status: COMMIT in 0.050 seconds
+[0m18:56:08.821140 [debug] [Thread-3 (]: Applying DROP to: "credit_risk"."gold"."gold_previous_application_features__dbt_backup"
+[0m18:56:08.822140 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.gold_previous_application_features"
+[0m18:56:08.823140 [debug] [Thread-3 (]: On model.credit_risk.gold_previous_application_features: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.gold_previous_application_features"} */
+drop table if exists "credit_risk"."gold"."gold_previous_application_features__dbt_backup" cascade
+[0m18:56:08.824646 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m18:56:08.826654 [debug] [Thread-3 (]: On model.credit_risk.gold_previous_application_features: Close
+[0m18:56:08.827654 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A24CF190>]}
+[0m18:56:08.829658 [info ] [Thread-3 (]: 8 of 13 OK created sql table model gold.gold_previous_application_features ..... [[32mSELECT 338857[0m in 18.16s]
+[0m18:56:08.830656 [debug] [Thread-3 (]: Finished running node model.credit_risk.gold_previous_application_features
+[0m18:56:10.794675 [debug] [Thread-2 (]: SQL status: SELECT 817395 in 47.740 seconds
+[0m18:56:10.798185 [debug] [Thread-2 (]: Using postgres connection "model.credit_risk.silver_bureau_balance"
+[0m18:56:10.799191 [debug] [Thread-2 (]: On model.credit_risk.silver_bureau_balance: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_bureau_balance"} */
+alter table "credit_risk"."silver"."silver_bureau_balance__dbt_tmp" rename to "silver_bureau_balance"
+[0m18:56:11.487087 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.690 seconds
+[0m18:56:11.493306 [debug] [Thread-2 (]: On model.credit_risk.silver_bureau_balance: COMMIT
+[0m18:56:11.493995 [debug] [Thread-2 (]: Using postgres connection "model.credit_risk.silver_bureau_balance"
+[0m18:56:11.493995 [debug] [Thread-2 (]: On model.credit_risk.silver_bureau_balance: COMMIT
+[0m18:56:11.499702 [debug] [Thread-2 (]: SQL status: COMMIT in 0.004 seconds
+[0m18:56:11.501710 [debug] [Thread-2 (]: Applying DROP to: "credit_risk"."silver"."silver_bureau_balance__dbt_backup"
+[0m18:56:11.501710 [debug] [Thread-2 (]: Using postgres connection "model.credit_risk.silver_bureau_balance"
+[0m18:56:11.507403 [debug] [Thread-2 (]: On model.credit_risk.silver_bureau_balance: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_bureau_balance"} */
+drop table if exists "credit_risk"."silver"."silver_bureau_balance__dbt_backup" cascade
+[0m18:56:11.509437 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m18:56:11.511115 [debug] [Thread-2 (]: On model.credit_risk.silver_bureau_balance: Close
+[0m18:56:11.513130 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A25F01D0>]}
+[0m18:56:11.515140 [info ] [Thread-2 (]: 2 of 13 OK created sql table model silver.silver_bureau_balance ................ [[32mSELECT 817395[0m in 48.61s]
+[0m18:56:11.515140 [debug] [Thread-2 (]: Finished running node model.credit_risk.silver_bureau_balance
+[0m18:56:11.518158 [debug] [Thread-3 (]: Began running node model.credit_risk.silver_bureau
+[0m18:56:11.518736 [info ] [Thread-3 (]: 10 of 13 START sql table model silver.silver_bureau ............................ [RUN]
+[0m18:56:11.520822 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.credit_risk.gold_previous_application_features, now model.credit_risk.silver_bureau)
+[0m18:56:11.522325 [debug] [Thread-3 (]: Began compiling node model.credit_risk.silver_bureau
+[0m18:56:11.526574 [debug] [Thread-3 (]: Writing injected SQL for node "model.credit_risk.silver_bureau"
+[0m18:56:11.530617 [debug] [Thread-3 (]: Began executing node model.credit_risk.silver_bureau
+[0m18:56:11.538864 [debug] [Thread-3 (]: Writing runtime sql for node "model.credit_risk.silver_bureau"
+[0m18:56:11.538864 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.silver_bureau"
+[0m18:56:11.538864 [debug] [Thread-3 (]: On model.credit_risk.silver_bureau: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_bureau"} */
+
+  
+    
+
+  create  table "credit_risk"."silver"."silver_bureau__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with bureau as (
+    select
+        "SK_ID_CURR"            as sk_id_curr,
+        "SK_ID_BUREAU"          as sk_id_bureau,
+        "CREDIT_ACTIVE"         as credit_active,
+        "CREDIT_TYPE"           as credit_type,
+        "DAYS_CREDIT"           as days_credit,
+        "DAYS_CREDIT_ENDDATE"   as days_credit_enddate,
+        "DAYS_ENDDATE_FACT"     as days_enddate_fact,
+        "DAYS_CREDIT_UPDATE"    as days_credit_update,
+        "AMT_CREDIT_SUM"        as amt_credit_sum,
+        "AMT_CREDIT_SUM_DEBT"   as amt_credit_sum_debt,
+        "AMT_CREDIT_SUM_OVERDUE" as amt_credit_sum_overdue,
+        "AMT_CREDIT_MAX_OVERDUE" as amt_credit_max_overdue,
+        "AMT_ANNUITY"           as amt_annuity
+    from "credit_risk"."bronze"."bureau"
+),
+
+bb as (
+    select * from "credit_risk"."silver"."silver_bureau_balance"
+),
+
+joined as (
+    select
+        b.*,
+        bb.months_balance_min,
+        bb.months_balance_max,
+        bb.months_balance_mean,
+        bb.months_balance_size,
+        bb.status_0_mean,
+        bb.status_1_mean,
+        bb.status_12345_mean,
+        bb.status_c_mean,
+        bb.status_x_mean,
+
+        -- derived
+        b.amt_credit_sum - b.amt_credit_sum_debt                      as debt_credit_diff,
+        b.amt_credit_sum / nullif(b.amt_credit_sum_debt, 0)           as debt_percentage,
+        b.amt_credit_sum / nullif(b.amt_annuity, 0)                   as credit_to_annuity_ratio,
+        (b.credit_active = 'Active')                                  as is_active,
+        (b.credit_active = 'Closed')                                  as is_closed,
+        (b.credit_type = 'Consumer credit')                           as is_consumer_credit
+
+    from bureau b
+    left join bb on b.sk_id_bureau = bb.sk_id_bureau
+)
+
+select * from joined
+  );
+  
+[0m18:56:11.544143 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m18:56:12.455912 [debug] [Thread-1 (]: SQL status: SELECT 337252 in 6.128 seconds
+[0m18:56:12.460536 [debug] [Thread-1 (]: Using postgres connection "model.credit_risk.gold_pos_cash_features"
+[0m18:56:12.460536 [debug] [Thread-1 (]: On model.credit_risk.gold_pos_cash_features: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.gold_pos_cash_features"} */
+alter table "credit_risk"."gold"."gold_pos_cash_features__dbt_tmp" rename to "gold_pos_cash_features"
+[0m18:56:12.465881 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.004 seconds
+[0m18:56:12.468931 [debug] [Thread-1 (]: On model.credit_risk.gold_pos_cash_features: COMMIT
+[0m18:56:12.471028 [debug] [Thread-1 (]: Using postgres connection "model.credit_risk.gold_pos_cash_features"
+[0m18:56:12.471028 [debug] [Thread-1 (]: On model.credit_risk.gold_pos_cash_features: COMMIT
+[0m18:56:12.483930 [debug] [Thread-1 (]: SQL status: COMMIT in 0.012 seconds
+[0m18:56:12.486448 [debug] [Thread-1 (]: Applying DROP to: "credit_risk"."gold"."gold_pos_cash_features__dbt_backup"
+[0m18:56:12.486448 [debug] [Thread-1 (]: Using postgres connection "model.credit_risk.gold_pos_cash_features"
+[0m18:56:12.486448 [debug] [Thread-1 (]: On model.credit_risk.gold_pos_cash_features: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.gold_pos_cash_features"} */
+drop table if exists "credit_risk"."gold"."gold_pos_cash_features__dbt_backup" cascade
+[0m18:56:12.486448 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m18:56:12.486448 [debug] [Thread-1 (]: On model.credit_risk.gold_pos_cash_features: Close
+[0m18:56:12.486448 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A2756610>]}
+[0m18:56:12.486448 [info ] [Thread-1 (]: 9 of 13 OK created sql table model gold.gold_pos_cash_features ................. [[32mSELECT 337252[0m in 6.18s]
+[0m18:56:12.496649 [debug] [Thread-1 (]: Finished running node model.credit_risk.gold_pos_cash_features
+[0m18:56:24.870600 [debug] [Thread-3 (]: SQL status: SELECT 1716428 in 13.327 seconds
+[0m18:56:24.870600 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.silver_bureau"
+[0m18:56:24.875365 [debug] [Thread-3 (]: On model.credit_risk.silver_bureau: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_bureau"} */
+alter table "credit_risk"."silver"."silver_bureau__dbt_tmp" rename to "silver_bureau"
+[0m18:56:24.875365 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m18:56:24.875365 [debug] [Thread-3 (]: On model.credit_risk.silver_bureau: COMMIT
+[0m18:56:24.875365 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.silver_bureau"
+[0m18:56:24.875365 [debug] [Thread-3 (]: On model.credit_risk.silver_bureau: COMMIT
+[0m18:56:24.895937 [debug] [Thread-3 (]: SQL status: COMMIT in 0.020 seconds
+[0m18:56:24.902531 [debug] [Thread-3 (]: Applying DROP to: "credit_risk"."silver"."silver_bureau__dbt_backup"
+[0m18:56:24.902531 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.silver_bureau"
+[0m18:56:24.902531 [debug] [Thread-3 (]: On model.credit_risk.silver_bureau: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_bureau"} */
+drop table if exists "credit_risk"."silver"."silver_bureau__dbt_backup" cascade
+[0m18:56:24.906105 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m18:56:24.906105 [debug] [Thread-3 (]: On model.credit_risk.silver_bureau: Close
+[0m18:56:24.906105 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A2761610>]}
+[0m18:56:24.906105 [info ] [Thread-3 (]: 10 of 13 OK created sql table model silver.silver_bureau ....................... [[32mSELECT 1716428[0m in 13.39s]
+[0m18:56:24.913261 [debug] [Thread-3 (]: Finished running node model.credit_risk.silver_bureau
+[0m18:56:24.913261 [debug] [Thread-2 (]: Began running node model.credit_risk.gold_bureau_features
+[0m18:56:24.913261 [info ] [Thread-2 (]: 11 of 13 START sql table model gold.gold_bureau_features ....................... [RUN]
+[0m18:56:24.916255 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.credit_risk.silver_bureau_balance, now model.credit_risk.gold_bureau_features)
+[0m18:56:24.916255 [debug] [Thread-2 (]: Began compiling node model.credit_risk.gold_bureau_features
+[0m18:56:24.920296 [debug] [Thread-2 (]: Writing injected SQL for node "model.credit_risk.gold_bureau_features"
+[0m18:56:24.921426 [debug] [Thread-2 (]: Began executing node model.credit_risk.gold_bureau_features
+[0m18:56:24.926633 [debug] [Thread-2 (]: Writing runtime sql for node "model.credit_risk.gold_bureau_features"
+[0m18:56:24.931428 [debug] [Thread-2 (]: Using postgres connection "model.credit_risk.gold_bureau_features"
+[0m18:56:24.931428 [debug] [Thread-2 (]: On model.credit_risk.gold_bureau_features: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.gold_bureau_features"} */
+
+  
+    
+
+  create  table "credit_risk"."gold"."gold_bureau_features__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with bureau as (
+    select * from "credit_risk"."silver"."silver_bureau"
+),
+
+overall as (
+    select
+        sk_id_curr,
+        avg(debt_credit_diff)                                  as bureau_debt_credit_diff_mean,
+        sum(amt_credit_sum_debt) / nullif(sum(amt_credit_sum), 0) as bureau_debt_over_credit
+    from bureau
+    group by sk_id_curr
+),
+
+active as (
+    select
+        sk_id_curr,
+        avg(debt_credit_diff)                                  as bureau_active_debt_credit_diff_mean,
+        avg(debt_percentage)                                   as bureau_active_debt_percentage_mean,
+        max(days_credit)                                       as bureau_active_days_credit_max,
+        sum(amt_credit_sum_debt) / nullif(sum(amt_credit_sum), 0) as bureau_active_debt_over_credit
+    from bureau
+    where is_active
+    group by sk_id_curr
+),
+
+closed as (
+    select
+        sk_id_curr,
+        max(days_credit_update)                                as bureau_closed_days_credit_update_max
+    from bureau
+    where is_closed
+    group by sk_id_curr
+),
+
+consumer as (
+    select
+        sk_id_curr,
+        max(days_credit_enddate)                               as bureau_consumer_days_credit_enddate_max
+    from bureau
+    where is_consumer_credit
+    group by sk_id_curr
+),
+
+last_12m as (
+    select
+        sk_id_curr,
+        avg(debt_percentage)                                   as bureau_last12m_debt_percentage_mean,
+        avg(debt_credit_diff)                                  as bureau_last12m_debt_credit_diff_mean
+    from bureau
+    where days_credit >= -360
+    group by sk_id_curr
+)
+
+select
+    o.sk_id_curr,
+    o.bureau_debt_credit_diff_mean,
+    o.bureau_debt_over_credit,
+    a.bureau_active_debt_credit_diff_mean,
+    a.bureau_active_debt_percentage_mean,
+    a.bureau_active_days_credit_max,
+    a.bureau_active_debt_over_credit,
+    c.bureau_closed_days_credit_update_max,
+    cons.bureau_consumer_days_credit_enddate_max,
+    l.bureau_last12m_debt_percentage_mean,
+    l.bureau_last12m_debt_credit_diff_mean
+from overall o
+left join active   a    on o.sk_id_curr = a.sk_id_curr
+left join closed    c    on o.sk_id_curr = c.sk_id_curr
+left join consumer  cons on o.sk_id_curr = cons.sk_id_curr
+left join last_12m  l    on o.sk_id_curr = l.sk_id_curr
+  );
+  
+[0m18:56:24.935796 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m18:56:33.106617 [debug] [Thread-4 (]: SQL status: SELECT 13605401 in 70.052 seconds
+[0m18:56:33.106617 [debug] [Thread-4 (]: Using postgres connection "model.credit_risk.silver_installments_payments"
+[0m18:56:33.106617 [debug] [Thread-4 (]: On model.credit_risk.silver_installments_payments: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_installments_payments"} */
+alter table "credit_risk"."silver"."silver_installments_payments__dbt_tmp" rename to "silver_installments_payments"
+[0m18:56:33.112654 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m18:56:33.116939 [debug] [Thread-4 (]: On model.credit_risk.silver_installments_payments: COMMIT
+[0m18:56:33.116939 [debug] [Thread-4 (]: Using postgres connection "model.credit_risk.silver_installments_payments"
+[0m18:56:33.116939 [debug] [Thread-4 (]: On model.credit_risk.silver_installments_payments: COMMIT
+[0m18:56:33.123929 [debug] [Thread-4 (]: SQL status: COMMIT in 0.004 seconds
+[0m18:56:33.125936 [debug] [Thread-4 (]: Applying DROP to: "credit_risk"."silver"."silver_installments_payments__dbt_backup"
+[0m18:56:33.128594 [debug] [Thread-4 (]: Using postgres connection "model.credit_risk.silver_installments_payments"
+[0m18:56:33.128594 [debug] [Thread-4 (]: On model.credit_risk.silver_installments_payments: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.silver_installments_payments"} */
+drop table if exists "credit_risk"."silver"."silver_installments_payments__dbt_backup" cascade
+[0m18:56:33.130622 [debug] [Thread-4 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m18:56:33.132634 [debug] [Thread-4 (]: On model.credit_risk.silver_installments_payments: Close
+[0m18:56:33.134703 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A2485390>]}
+[0m18:56:33.134703 [info ] [Thread-4 (]: 4 of 13 OK created sql table model silver.silver_installments_payments ......... [[32mSELECT 13605401[0m in 70.23s]
+[0m18:56:33.137731 [debug] [Thread-4 (]: Finished running node model.credit_risk.silver_installments_payments
+[0m18:56:33.139747 [debug] [Thread-3 (]: Began running node model.credit_risk.gold_installments_features
+[0m18:56:33.139747 [info ] [Thread-3 (]: 12 of 13 START sql table model gold.gold_installments_features ................. [RUN]
+[0m18:56:33.141759 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.credit_risk.silver_bureau, now model.credit_risk.gold_installments_features)
+[0m18:56:33.142772 [debug] [Thread-3 (]: Began compiling node model.credit_risk.gold_installments_features
+[0m18:56:33.145384 [debug] [Thread-3 (]: Writing injected SQL for node "model.credit_risk.gold_installments_features"
+[0m18:56:33.147897 [debug] [Thread-3 (]: Began executing node model.credit_risk.gold_installments_features
+[0m18:56:33.151932 [debug] [Thread-3 (]: Writing runtime sql for node "model.credit_risk.gold_installments_features"
+[0m18:56:33.153450 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.gold_installments_features"
+[0m18:56:33.155469 [debug] [Thread-3 (]: On model.credit_risk.gold_installments_features: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.gold_installments_features"} */
+
+  
+    
+
+  create  table "credit_risk"."gold"."gold_installments_features__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with pay as (
+    select * from "credit_risk"."silver"."silver_installments_payments"
+),
+
+overall as (
+    select
+        sk_id_curr,
+        sum(significant_late_payment)                          as ins_significant_late_payment_sum,
+        avg(payment_ratio)                                     as payment_mean_to_annuity_ratio_helper -- joined to annuity later
+    from pay
+    group by sk_id_curr
+),
+
+last_36m as (
+    select
+        sk_id_curr,
+        avg(dpd_7)                                              as ins_36m_dpd_7_mean
+    from pay
+    where days_instalment >= -1080
+    group by sk_id_curr
+),
+
+most_recent_prev as (
+    -- one row per SK_ID_CURR: which SK_ID_PREV is their most recent loan
+    select distinct on (sk_id_curr)
+        sk_id_curr,
+        sk_id_prev as last_sk_id_prev
+    from pay
+    order by sk_id_curr, days_instalment desc
+),
+
+last_loan as (
+    select
+        m.sk_id_curr,
+        avg(case when p.is_late_payment then 1.0 else 0.0 end) as last_loan_late_payment_mean,
+        avg(p.dpd)                                             as last_loan_dpd_mean,
+        stddev(p.dpd)                                          as last_loan_dpd_std
+    from most_recent_prev m
+    join pay p
+        on p.sk_id_curr = m.sk_id_curr
+       and p.sk_id_prev = m.last_sk_id_prev
+    group by m.sk_id_curr
+)
+
+select
+    o.sk_id_curr,
+    o.ins_significant_late_payment_sum,
+    l36.ins_36m_dpd_7_mean,
+    ll.last_loan_late_payment_mean,
+    ll.last_loan_dpd_mean,
+    ll.last_loan_dpd_std
+from overall o
+left join last_36m  l36 on o.sk_id_curr = l36.sk_id_curr
+left join last_loan ll  on o.sk_id_curr = ll.sk_id_curr
+  );
+  
+[0m18:56:33.156799 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m18:56:36.842426 [debug] [Thread-2 (]: SQL status: SELECT 305811 in 11.906 seconds
+[0m18:56:36.845268 [debug] [Thread-2 (]: Using postgres connection "model.credit_risk.gold_bureau_features"
+[0m18:56:36.846373 [debug] [Thread-2 (]: On model.credit_risk.gold_bureau_features: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.gold_bureau_features"} */
+alter table "credit_risk"."gold"."gold_bureau_features__dbt_tmp" rename to "gold_bureau_features"
+[0m18:56:36.848552 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m18:56:36.850718 [debug] [Thread-2 (]: On model.credit_risk.gold_bureau_features: COMMIT
+[0m18:56:36.851256 [debug] [Thread-2 (]: Using postgres connection "model.credit_risk.gold_bureau_features"
+[0m18:56:36.852391 [debug] [Thread-2 (]: On model.credit_risk.gold_bureau_features: COMMIT
+[0m18:56:36.941313 [debug] [Thread-2 (]: SQL status: COMMIT in 0.088 seconds
+[0m18:56:36.941908 [debug] [Thread-2 (]: Applying DROP to: "credit_risk"."gold"."gold_bureau_features__dbt_backup"
+[0m18:56:36.941908 [debug] [Thread-2 (]: Using postgres connection "model.credit_risk.gold_bureau_features"
+[0m18:56:36.941908 [debug] [Thread-2 (]: On model.credit_risk.gold_bureau_features: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.gold_bureau_features"} */
+drop table if exists "credit_risk"."gold"."gold_bureau_features__dbt_backup" cascade
+[0m18:56:36.946322 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m18:56:36.950054 [debug] [Thread-2 (]: On model.credit_risk.gold_bureau_features: Close
+[0m18:56:36.951649 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A279AD90>]}
+[0m18:56:36.952862 [info ] [Thread-2 (]: 11 of 13 OK created sql table model gold.gold_bureau_features .................. [[32mSELECT 305811[0m in 12.04s]
+[0m18:56:36.954563 [debug] [Thread-2 (]: Finished running node model.credit_risk.gold_bureau_features
+[0m18:57:14.409423 [debug] [Thread-3 (]: SQL status: SELECT 339587 in 41.253 seconds
+[0m18:57:14.412738 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.gold_installments_features"
+[0m18:57:14.413789 [debug] [Thread-3 (]: On model.credit_risk.gold_installments_features: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.gold_installments_features"} */
+alter table "credit_risk"."gold"."gold_installments_features__dbt_tmp" rename to "gold_installments_features"
+[0m18:57:14.417968 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m18:57:14.419987 [debug] [Thread-3 (]: On model.credit_risk.gold_installments_features: COMMIT
+[0m18:57:14.419987 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.gold_installments_features"
+[0m18:57:14.419987 [debug] [Thread-3 (]: On model.credit_risk.gold_installments_features: COMMIT
+[0m18:57:14.428013 [debug] [Thread-3 (]: SQL status: COMMIT in 0.006 seconds
+[0m18:57:14.430397 [debug] [Thread-3 (]: Applying DROP to: "credit_risk"."gold"."gold_installments_features__dbt_backup"
+[0m18:57:14.430397 [debug] [Thread-3 (]: Using postgres connection "model.credit_risk.gold_installments_features"
+[0m18:57:14.430397 [debug] [Thread-3 (]: On model.credit_risk.gold_installments_features: /* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "credit_risk", "target_name": "dev", "node_id": "model.credit_risk.gold_installments_features"} */
+drop table if exists "credit_risk"."gold"."gold_installments_features__dbt_backup" cascade
+[0m18:57:14.430397 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m18:57:14.430397 [debug] [Thread-3 (]: On model.credit_risk.gold_installments_features: Close
+[0m18:57:14.430397 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ecd0a4ff-11f8-4a5d-8e51-212c76d058f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A2C5BE10>]}
+[0m18:57:14.430397 [info ] [Thread-3 (]: 12 of 13 OK created sql table model gold.gold_installments_features ............ [[32mSELECT 339587[0m in 41.29s]
+[0m18:57:14.440786 [debug] [Thread-3 (]: Finished running node model.credit_risk.gold_installments_features
+[0m18:57:14.442805 [debug] [Thread-4 (]: Began running node model.credit_risk.gold_applicant_features
+[0m18:57:14.442805 [info ] [Thread-4 (]: 13 of 13 SKIP relation gold.gold_applicant_features ............................ [[33mSKIP[0m]
+[0m18:57:14.444812 [debug] [Thread-4 (]: Finished running node model.credit_risk.gold_applicant_features
+[0m18:57:14.448596 [debug] [MainThread]: On master: COMMIT
+[0m18:57:14.448596 [debug] [MainThread]: Using postgres connection "master"
+[0m18:57:14.448596 [debug] [MainThread]: On master: COMMIT
+[0m18:57:14.448596 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:57:14.472557 [debug] [MainThread]: SQL status: COMMIT in 0.022 seconds
+[0m18:57:14.472557 [debug] [MainThread]: On master: Close
+[0m18:57:14.472557 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:57:14.472557 [debug] [MainThread]: Connection 'create_credit_risk_silver' was properly closed.
+[0m18:57:14.472557 [debug] [MainThread]: Connection 'create_credit_risk_gold' was properly closed.
+[0m18:57:14.476711 [debug] [MainThread]: Connection 'list_credit_risk_silver' was properly closed.
+[0m18:57:14.476711 [debug] [MainThread]: Connection 'list_credit_risk_gold' was properly closed.
+[0m18:57:14.476711 [debug] [MainThread]: Connection 'model.credit_risk.gold_pos_cash_features' was properly closed.
+[0m18:57:14.476711 [debug] [MainThread]: Connection 'model.credit_risk.gold_bureau_features' was properly closed.
+[0m18:57:14.479367 [debug] [MainThread]: Connection 'model.credit_risk.gold_installments_features' was properly closed.
+[0m18:57:14.479367 [debug] [MainThread]: Connection 'model.credit_risk.silver_installments_payments' was properly closed.
+[0m18:57:14.480377 [info ] [MainThread]: 
+[0m18:57:14.481377 [info ] [MainThread]: Finished running 13 table models in 0 hours 1 minutes and 52.00 seconds (112.00s).
+[0m18:57:14.484903 [debug] [MainThread]: Command end result
+[0m18:57:14.565960 [debug] [MainThread]: Wrote artifact WritableManifest to D:\credit-scoring-pipeline\dbt\target\manifest.json
+[0m18:57:14.571076 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\credit-scoring-pipeline\dbt\target\semantic_manifest.json
+[0m18:57:14.575078 [debug] [MainThread]: Wrote artifact OsiDocument to D:\credit-scoring-pipeline\dbt\target\osi_document.json
+[0m18:57:14.586567 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\credit-scoring-pipeline\dbt\target\run_results.json
+[0m18:57:14.586567 [info ] [MainThread]: 
+[0m18:57:14.586567 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m18:57:14.586567 [info ] [MainThread]: 
+[0m18:57:14.586567 [error] [MainThread]: [[31mERROR[0m]: in model silver_application (models\silver\silver_application.sql)
+[0m18:57:14.586567 [error] [MainThread]:   Database Error in model silver_application (models\silver\silver_application.sql)
+  UNION types bigint and text cannot be matched
+  LINE 25:     select * from test
+                      ^
+  compiled code at target\run\credit_risk\models\silver\silver_application.sql
+[0m18:57:14.586567 [info ] [MainThread]: 
+[0m18:57:14.596847 [info ] [MainThread]:   compiled code at target\compiled\credit_risk\models\silver\silver_application.sql
+[0m18:57:14.596847 [info ] [MainThread]: 
+[0m18:57:14.596847 [info ] [MainThread]: Done. PASS=11 WARN=0 ERROR=1 SKIP=1 NO-OP=0 REUSED=0 TOTAL=13
+[0m18:57:14.596847 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 11 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m18:57:14.602723 [debug] [MainThread]: Command `dbt run` failed at 18:57:14.602723 after 117.16 seconds
+[0m18:57:14.603743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A18C4210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A18C6190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A2A284EC10>]}
+[0m18:57:14.603743 [debug] [MainThread]: Flushing usage events
+[0m18:57:16.330718 [debug] [MainThread]: An error was encountered while trying to flush usage events
